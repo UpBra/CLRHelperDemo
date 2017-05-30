@@ -6,22 +6,38 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		758E56461EDD002300B3D3B4 /* Build Colors */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 758E56471EDD002300B3D3B4 /* Build configuration list for PBXAggregateTarget "Build Colors" */;
+			buildPhases = (
+				758E564A1EDD002F00B3D3B4 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Build Colors";
+			productName = "Build Colors";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		758E56241EDB404900B3D3B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758E56231EDB404900B3D3B4 /* AppDelegate.swift */; };
-		758E56261EDB404900B3D3B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758E56251EDB404900B3D3B4 /* ViewController.swift */; };
 		758E56291EDB404900B3D3B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758E56271EDB404900B3D3B4 /* Main.storyboard */; };
 		758E562B1EDB404900B3D3B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758E562A1EDB404900B3D3B4 /* Assets.xcassets */; };
 		758E562E1EDB404900B3D3B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758E562C1EDB404900B3D3B4 /* LaunchScreen.storyboard */; };
+		758E56391EDB40F100B3D3B4 /* ColorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758E56381EDB40F100B3D3B4 /* ColorsTableViewController.swift */; };
+		758E56451EDB451E00B3D3B4 /* UIColor+CLRColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758E56441EDB451E00B3D3B4 /* UIColor+CLRColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		758E56201EDB404900B3D3B4 /* CLRHelperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLRHelperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		758E56231EDB404900B3D3B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		758E56251EDB404900B3D3B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		758E56281EDB404900B3D3B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		758E562A1EDB404900B3D3B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		758E562D1EDB404900B3D3B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		758E562F1EDB404900B3D3B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		758E56381EDB40F100B3D3B4 /* ColorsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsTableViewController.swift; sourceTree = "<group>"; };
+		758E56441EDB451E00B3D3B4 /* UIColor+CLRColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+CLRColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				758E56221EDB404900B3D3B4 /* CLRHelperDemo */,
+				758E563A1EDB42A300B3D3B4 /* Third-Party */,
 				758E56211EDB404900B3D3B4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,13 +72,53 @@
 			isa = PBXGroup;
 			children = (
 				758E56231EDB404900B3D3B4 /* AppDelegate.swift */,
-				758E56251EDB404900B3D3B4 /* ViewController.swift */,
-				758E56271EDB404900B3D3B4 /* Main.storyboard */,
-				758E562A1EDB404900B3D3B4 /* Assets.xcassets */,
-				758E562C1EDB404900B3D3B4 /* LaunchScreen.storyboard */,
-				758E562F1EDB404900B3D3B4 /* Info.plist */,
+				758E56351EDB408500B3D3B4 /* Classes */,
+				758E56361EDB409100B3D3B4 /* Assets */,
+				758E56371EDB40A300B3D3B4 /* Resources */,
 			);
 			path = CLRHelperDemo;
+			sourceTree = "<group>";
+		};
+		758E56351EDB408500B3D3B4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				758E56381EDB40F100B3D3B4 /* ColorsTableViewController.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		758E56361EDB409100B3D3B4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				758E562C1EDB404900B3D3B4 /* LaunchScreen.storyboard */,
+				758E56271EDB404900B3D3B4 /* Main.storyboard */,
+				758E562A1EDB404900B3D3B4 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		758E56371EDB40A300B3D3B4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				758E562F1EDB404900B3D3B4 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		758E563A1EDB42A300B3D3B4 /* Third-Party */ = {
+			isa = PBXGroup;
+			children = (
+				758E563B1EDB42A300B3D3B4 /* CLRHelper */,
+			);
+			path = "Third-Party";
+			sourceTree = "<group>";
+		};
+		758E563B1EDB42A300B3D3B4 /* CLRHelper */ = {
+			isa = PBXGroup;
+			children = (
+				758E56441EDB451E00B3D3B4 /* UIColor+CLRColor.swift */,
+			);
+			path = CLRHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +155,10 @@
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
 					};
+					758E56461EDD002300B3D3B4 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 758E561B1EDB404900B3D3B4 /* Build configuration list for PBXProject "CLRHelperDemo" */;
@@ -114,6 +175,7 @@
 			projectRoot = "";
 			targets = (
 				758E561F1EDB404900B3D3B4 /* CLRHelperDemo */,
+				758E56461EDD002300B3D3B4 /* Build Colors */,
 			);
 		};
 /* End PBXProject section */
@@ -131,13 +193,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		758E564A1EDD002F00B3D3B4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}\"/Third-Party/CLRHelper/CLRHelper -m json -t CLRColor -p CLR -i \"${SRCROOT}\"/Third-Party/CLRHelper/CLRColor.json -o \"${SRCROOT}\"/Third-Party/CLRHelper/ -s";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		758E561C1EDB404900B3D3B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				758E56261EDB404900B3D3B4 /* ViewController.swift in Sources */,
 				758E56241EDB404900B3D3B4 /* AppDelegate.swift in Sources */,
+				758E56391EDB40F100B3D3B4 /* ColorsTableViewController.swift in Sources */,
+				758E56451EDB451E00B3D3B4 /* UIColor+CLRColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +361,20 @@
 			};
 			name = Release;
 		};
+		758E56481EDD002300B3D3B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		758E56491EDD002300B3D3B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -299,6 +392,14 @@
 			buildConfigurations = (
 				758E56331EDB404900B3D3B4 /* Debug */,
 				758E56341EDB404900B3D3B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		758E56471EDD002300B3D3B4 /* Build configuration list for PBXAggregateTarget "Build Colors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758E56481EDD002300B3D3B4 /* Debug */,
+				758E56491EDD002300B3D3B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

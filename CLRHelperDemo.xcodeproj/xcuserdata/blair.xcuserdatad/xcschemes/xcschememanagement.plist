@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Build Colors.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>CLRHelperDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>758E561F1EDB404900B3D3B4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>758E56461EDD002300B3D3B4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
